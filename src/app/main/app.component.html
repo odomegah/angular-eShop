@@ -1,44 +1,11 @@
 <app-header></app-header>
 <div class="lg:flex p-5 block">
     <div class="flex-auto p-2">
+      <app-alert></app-alert>
         <router-outlet></router-outlet>
+     </div>
+     <div class="lg:w-80 w-full flex-none">
+       <app-sidebar></app-sidebar>
     </div>
-    <div class="lg:block flex-none w-80 hidden">
-        <div class="mb-6 lg:mb-0">
-            <div
-              class="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-              <div class="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
-                <p class="mb-4 text-sm uppercase">
-                  <strong>Panier</strong>
-                </p>
-                <h3 class="mb-6 text-3xl">
-                  <strong>$ 0</strong>
-                </h3>
-                <button type="button"
-                  class="inline-block w-full rounded bg-pink-600 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                  data-te-ripple-init data-te-ripple-color="light">
-                  PAYER
-                </button>
-              </div>
-              <div class="p-6">
-                <ol class="list-inside">
-                  
-                 
-                  <li class="mb-4 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" class="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Code examples
-                  </li>
-                  <li class="mb-4 flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                      stroke="currentColor" class="mr-3 h-5 w-5 text-primary dark:text-primary-400">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>Premium
-                    snippets
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-    </div>
-</div>
+     </div>  
 <app-footer></app-footer>

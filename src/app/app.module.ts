@@ -3,28 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './main/app.component';
-import { HeaderComponent } from './main/common/header/header.component';
-import { FooterComponent } from './main/common/footer/footer.component';
 import { ArticleModule } from './article/article.module';
-import { NotFoundComponent } from './main/common/not-found/not-found.component';
 import { PanierModule } from './panier/panier.module';
 import { PaiementModule } from './paiement/paiement.module';
+import { PartialsModule } from './partials/partials.module';
 
-const routes: Routes = [
-  {path: '**', component: NotFoundComponent}
-]
+const routes: Routes = []
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
     ArticleModule,
     PanierModule,
     PaiementModule,
+    PartialsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],
